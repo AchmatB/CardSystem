@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, ScrollView, View, Button } from 'react-native';
 import Cards from '../components/Cards';
-import FABButton from '../components/Button';
+import FABButton from '../components/Buttons/Button.Component';
 
 export default class Home extends Component {
 
@@ -12,7 +12,7 @@ export default class Home extends Component {
         name: 'Camera card',
         phoneNumber: '0210210211',
         status: 'Completed',
-        uri: 'https://picsum.photos/id/355/700/700'
+        uri: 'https://picsum.photos/id/355/700/700',
       },
       {
         id: 1,
