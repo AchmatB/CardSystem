@@ -24,14 +24,14 @@ export default class CreateCard extends Component {
         return (
             <ScrollView>
                 <DatePicker/>
-                <View>
-                <ImagePicker/>
-                </View>
+                
                 <TextInput label='Card name' value={this.state.name} onChangeText={(name) => this.setState({ name })} ></TextInput>
                 <TextInput label='Phone Number' value={this.state.phoneNumber} onChangeText={(phoneNumber) => this.setState({ phoneNumber })} ></TextInput>
                 <TextInput label='Status' value={this.state.status} onChangeText={(status) => this.setState({ status })} ></TextInput>
                 <TextInput label='URI' value={this.state.uri} onChangeText={(uri) => this.setState({ uri })} ></TextInput>
-                
+                <View>
+                <ImagePicker/>
+                </View>
                 <Button title='Submit' onPress={() => this.CreateCard()}></Button>
             </ScrollView>
 
